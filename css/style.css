@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(238, 238, 238) ;
+}
+    
+.header{
+    height: 100px;
+    max-width: 100%;
+    
+}
+.container_header{
+  background: url('../img/abstract-technology-banner-blue-background-vector.jpg');
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  
+}
+
+#icon_menu{
+    visibility: hidden;
+    display: none;
+
+}
+
+.logo img{
+   
+    width: 95px;
+
+}
+.menu nav ul{
+    display: flex;
+    color: azure;
+    font-family:'Franklin Gothic Medium';
+}
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+.menu nav ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 300ms;
+}
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+.button_register{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 14px 50px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(107, 32, 32);
+    
+    cursor: pointer;
+    transition: background, color, 500ms;
+    font-family: Roboto;
+    opacity: 0.7;
+}
+.button_register:hover{
+    background-color: rgb(107, 32, 32);
+    color: rgb(103, 190, 79);
+    opacity: 0.9;
+}
+main{
+    max-width: 1000px;
+    height: calc(100vh + 800px);
+    padding: 40px;
+    margin: auto;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.logo{
+    opacity: 0.8;
+}
+.text_info{
+    width: 50%;
+    font-family: Roboto;
+}
+.text_info h1{
+    font-size: 50px;
+}
+
+.text_info p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+.media_cover{
+    width: 50%;
+}
+.media_cover video{
+    width: 100%;
+   margin-top: 100px;
+}
+.button_cover{
+    display: flex;
+    margin-top: 40px;
+
+}
+.button2_cover{
+    padding: 14px 40px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 500ms;
+    background: #d3c2c2;
+    font-family: Roboto;
+
+}
+.button2_cover:hover{
+ background: #ffffff;
+    
+}
+
+.button1_cover{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 14px 50px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: azure;
+    cursor: pointer;
+    transition: background, color, 500ms;
+    font-family: Roboto;
+    
+}
+
+.button1_cover:hover{
+    background: #a2ff37;
+    color: black;
+}
+
+.container_banner{
+    margin-top: 80px;
+}
+
+.banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #121214;
+    position: relative;
+}
+
+.banner_icon{
+    width: 35%;
+    height: 100%;
+}
+
+#icon_tech{
+    width: 400px;
+    margin-top: -20px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0, 0, 0, 0.5));
+}
+
+.banner_text{
+    width: 60%;
+    height: 200px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.banner_text h2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.banner_text a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 300ms;
+
+}
+
+.banner_text a:hover{
+    color: #69F1A1;
+}
+
+.banner_icon2{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+
+#icon_tech2{
+    width: 300px;
+    position: relative;
+    margin-top: -40px;
+    opacity: 0.7;
+    
+}
+@media (max-width: 1024px){
+    .container_header,
+    main{ padding: 20px;
+    }
+
+
+#icon_menu{
+    display:block;
+    visibility: visible;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.register{
+ display: none;
+}
+
+.menu{
+    height: 0px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
+    transition: all 300ms;
+    
+}
+
+.menu nav ul{
+    padding: 20px 0px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.74);
+
+}
+
+.menu nav ul li{
+    
+    padding: 10px 40px;
+}
+.menu nav ul li a{
+    color: black;
+}
+
+.mostrar_menu{
+    height: 235px;
+}
+
+.text_info h1{
+    font-size: 30px;
+
+}
+.text_info p{
+    font-size: 18px;
+}
+
+.banner_text h2{
+    font-size: 15px;
+}
+
+#icon_tech{
+    left: -80px;
+
+}
+
+.banner_icon2{
+    right: -20px;
+}
+
+}
+
+@media (max-width: 920px){
+    .text_info{
+        width: 100%;
+    }
+    
+    .media_cover{
+        display: none;
+    }
+
+    .banner{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_tech{
+       left: 0;
+    }
+
+    #icon_tech2{
+        display: none;
+
+    }
+
+    .banner_text{
+        width: 100%;
+        margin-top: -40px;
+
+    }
+
+
+}
+
+.desliz_container{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.desliz_slide{
+    background-position: center;
+    background-size: cover;
+    width: 330px;
+    height: 400px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+}
+
+
+
+.video {
+    width: 380px;
+    height: cover;
+    margin-top: -220px;
+    margin-left: -30px;
+}
+
+main .contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+
+article {
+	margin: 50px 0;
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 40px;
+}
+
+article h2 {
+	color: #2D5F85;
+	font-size: 32px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.subtitle{
+    color: #00233d;
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2d5f85;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
+}
+
+.fm-video .vjs-slider {
+	background: #2d5f85;
+}
+
+.fm-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
+}
+
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+
+.login_background{
+    background-image: url('../img/wallpaper_1366x768_book-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    overflow: hidden;
+  }
+

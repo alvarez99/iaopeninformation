@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/245c3c2022.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" href="css/opinionated.css" href="css/normalize.css" href="/css/video-js.css">
+    <title>Home - IAopeninformation</title>
+</head>
+<body>
+ <header class="header">
+
+    <div class="container_header" >
+       
+        <div class="logo">
+            <img width="100%" height="100%" src="./img/IA.png" alt="">
+        </div>
+        
+        <div class="menu">
+            <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./github.html">Github</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./Info.html">Informacion</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <i class="fa-solid fa-bars" id="icon_menu"></i>
+
+        <div class="register">
+            <button onclick="gotoLink(this)"  class="button_register"  value="./login.html">Registrarse</button>
+            <script>
+                function gotoLink(link){
+                    console.log(link.value);
+                    location.href = link.value;
+
+                }
+             </script>
+        </div>
+    
+
+    </div>
+
+ </header>
+ 
+ <main>
+    <div class="contenedor">
+        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+            <source src="video/OpenAI-gpt-3.mp4" type="video/mp4">
+        </video>
+
+        <article>
+            <h2>Esta Inteligencia Artificial ESCRIBE MEJOR QUE TÚ... ¡Y puedes probarla! | GPT-3</h2>
+            <p>Ya puedes empezar a utilizar a GPT3, la increíble Inteligencia Artificial de OpenAI con la que puedes generar texto natural realista. Pero... antes de comenzar, ¿qué necesitas saber? ¿Cuánto cuesta? ¿Qué modelo utilizo? ¿Cómo empiezo a programarlo con Python? ¡Todas las respuestas en este vídeo!</p><br/>
+
+            
+        </article>
+    </div>
+
+    <div class="contenedor">
+        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+            <source src="video/primera red neuronal  Inteligencia Artificial.mp4" type="video/mp4">
+        </video>
+
+        <article>
+            <h2>Crea tu primera red neuronal - Inteligencia Artificial</h2>
+            <p>En este video entrenarás y utilizarás una red neuronal desde cero.</p>
+
+        </article>
+    </div>
+
+    <div class="contenedor">
+        <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+            <source src="video/Cómo funcionan las redes neuronales  Inteligencia Artificial.mp4" type="video/mp4">
+        </video>
+
+        <article>
+            <h2>Cómo funcionan las redes neuronales - Inteligencia Artificial</h2>
+            <p>¿Sabes por qué las redes neuronales pueden aprender cosas?</p>
+            <p>En este video investigamos cómo es posible que las redes generen aprendizaje.
+                Busco hacerlo de manera que cualquiera pueda entenderlo, sin requerir un conocimiento previo, ni entrar de momento en temas técnicos o matemáticos.
+            </p>
+        </article>
+    </div>
+    
+ 
+</main>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

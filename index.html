@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/245c3c2022.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" href="css/opinionated.css" href="css/normalize.css">
+    <title>Home - IAopeninformation</title>
+</head>
+<body>
+ <header class="header">
+
+    <div class="container_header">
+       
+        <div class="logo">
+            <img width="100%" height="100%" src="./img/IA.png" alt="">
+        </div>
+        
+        <div class="menu">
+            <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./github.html">Github</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./Info.html">Informacion</a></li>
+                        
+                    </ul>
+            </nav>
+        </div>
+        <i class="fa-solid fa-bars" id="icon_menu"></i>
+
+        <div class="register">
+            <button onclick="gotoLink(this)"  class="button_register"  value="./login.html">Registrarse</button>
+             <script>
+                function gotoLink(link){
+                    console.log(link.value);
+                    location.href = link.value;
+
+                }
+             </script>
+        </div>
+
+
+    </div>
+
+ </header>
+ 
+ <main>
+   
+    <div class="cover">
+       
+     <div class="text_info">
+        <h1>IA - Open Information</h1>
+        <p>Nuestro objetivo es informar sobre las inteligencias artificiales, brindar todo nuestro conocimiento para alimentar el escaso conocimiento de la gente en cuanto a las inteligencias artificiales, esta página no solo es para aquellas personas que no tienen noción de las IA del siglo XXI, sino que también estamos abiertos a recibir aportes que nos hagan crecer y llenar de conocimiento a nuestros receptores.</p>
+       
+        <div class="button_cover">
+            <button onclick="gotoLink(this)"  class="button1_cover" value="./login.html">Registrarse</button>
+            <button  onclick="gotoLink(this)" class="button2_cover" value="./info.html">Leer mas</button>
+            <script>
+                function gotoLink(link){
+                    console.log(link.value);
+                    location.href = link.value;
+
+                }
+            </script>
+        </div>
+     
+     </div>  
+        <div class="media_cover">
+         <video height="300px"  src="./video/How will Artificial Intelligence and Internet of Things change the world_.mp4" autoplay playinline loop muted preload="auto"></video>
+        </div>
+     </div>
+   
+     <div class="container_banner">
+        <div class="banner">
+            <div class="banner_icon">
+                <img src="./img/pngegg (1).png" id="icon_tech" alt="">
+
+            </div>
+
+            <div class="banner_icon2">
+                <img src="./img/pngegg (2).png" id="icon_tech2" alt="">
+            </div>
+        
+            
+            <div class="banner_text">
+                <h2>En pocas palabras, la inteligencia artificial (IA) se refiere a sistemas o máquinas que imitan la inteligencia humana para realizar tareas y pueden mejorarse iterativamente en función de la información que recopila. La inteligencia artificial viene en muchas formas. Algunos ejemplos son: Los chatbots usan IA para comprender los problemas de los clientes más rápido y brindar respuestas más efectivas. Smart Assistant utiliza IA para analizar información clave de grandes conjuntos de datos de texto libre para mejorar la programación. Un motor de recomendación puede recomendar automáticamente series de televisión en función de los hábitos de visualización de un usuario.</h2>
+                <a href="./Info.html">Leer mas</a>
+            </div>
+        </div>
+    </div>
+ 
+</main>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

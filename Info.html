@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/245c3c2022.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" href="css/opinionated.css" href="css/normalize.css">
+    <title>Home - IAopeninformation</title>
+</head>
+<body  >
+ <header  class="header" background="./img/abstract-technology-banner-blue-background-vector.jpg">
+
+    <div class="container_header"  background="./img/abstract-technology-banner-blue-background-vector.jpg">
+       
+        <div class="logo">
+            <img width="100%" height="100%" src="img/IA.png" alt="">
+        </div>
+        
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./github.html">Github</a></li>
+                    <li><a href="./videos.html">Videos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./Info.html">Informacion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <i class="fa-solid fa-bars" id="icon_menu"></i>
+
+        <div class="register">
+            <button onclick="gotoLink(this)"  class="button_register"  value="./login.html">Registrarse</button>
+            <script>
+                function gotoLink(link){
+                    console.log(link.value);
+                    location.href = link.value;
+
+                }
+             </script>
+        </div>
+
+
+    </div>
+
+ </header>
+ 
+ <main>
+    <div class="contenedor">
+        
+    
+        <article>
+            <h2>¿Que usos se le puede dar a las IA?</h2>
+            <p>Tareas humanas, de hecho, esto se manifiesta a través del uso de la inteligencia artificial, tales como: asistentes virtuales, software de análisis de imágenes, motores de búsqueda, sistemas de reconocimiento facial y de voz, drones y automóviles autónomos. Por eso hoy te vamos a hablar de los usos de la inteligencia artificial, centrándonos en cómo: Desarrollar motores de búsqueda web con la capacidad de analizar grandes cantidades de datos y crear perfiles de usuario para proporcionar resultados que satisfagan sus necesidades y aumentar la comercialización en plataformas como Amazon. Redirija las compras en Internet creando recomendaciones personalizadas para los consumidores basadas en información sobre su historial de búsqueda y compras. Cree un asistente personal digital ya que los teléfonos inteligentes usan IA para responder preguntas, ofrecer consejos y organizar las tareas diarias.</p><br/>
+
+
+        </article>
+    </div>
+    <div class="contenedor">
+        
+    
+        <article>
+            <h2>Un poco de historia..</h2>
+            <p>La historia de la inteligencia artificial comienza con el artículo de 1943 "El cálculo lógico de los pensamientos internos en la actividad neuronal" de Warren McCullough y Walter Pitts. En ese trabajo, los científicos presentaron el primer modelo matemático para crear redes neuronales. La primera computadora de red neuronal, Snarc, fue creada en 1950 por dos estudiantes de Harvard: Marvin Minsky y Dean Edmonds. Ese mismo año, Alan Turing lanzó el Test de Turing, que todavía se utiliza hoy en día para evaluar la inteligencia artificial. En 1952, Arthur Samuel inventó un software que le enseñó a sí mismo a jugar al ajedrez. El término inteligencia artificial apareció por primera vez en 1956 en el discurso de John McCarthy en el Programa de Investigación de Verano de Dartmouth sobre Inteligencia Artificial.</p><br/>
+
+
+        </article>
+    </div>
+  
+ 
+</main>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
